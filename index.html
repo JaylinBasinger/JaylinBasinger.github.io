@@ -1,164 +1,253 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
-<title>MapsByJaylin</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3.css">
-<style>
-  body { font-family : "Sawarabi Mincho"; }
- </style>
-
-</head>
-<body>
+<html lang="en">
+	<head>
   
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>Jaylin</b> Basinger</a>
-    <!-- Float links to the right. -->
-    <div class="w3-right" style="font-family: Sawarbi Mincho;">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    </div>
-  </div>
-</div>
+		<meta charset="utf-8">
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1200px;" id="home">
-  <img class="w3-image" src= "images/background1.png" alt="Architecture" width="1200" height="587">
-  <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min" style="font-family: Sawarbi Mincho;"><b>Jaylin Basinger </b></span> </h1>
-  </div>
-</header>
+    <!-- 
+      TODO
 
-<!-- Begin page content -->
-<div class="w3-content w3-padding" style="max-width:1256px">
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
 
-  <!-- About Section -->
-  <div class="w3-container w3-padding-24" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-   <div style="font-size: medium;"
-    <p>I am a Geography student at the University of Kentucky with a focus in GIS. I also am pursing a minor Urban Studies. I am proficent in Adobe Products, QGIS, and ArcPro.  
-    </p> </div>
-  </div>
-  <!-- Project Section -->
-  <div class="w3-container w3-padding-32" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
-  </div>
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
 
-  <div class="w3-row-padding">
-    <div class="m12 w3-margin-bottom"> <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
-      
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Mining Accidents</div>
-        <img src="images/coal.png" alt="House" style="width:100%">
-      </div>
-    
-      <div class="w3-display-container">
-        <div class="w3-display-center"></div>
-        <p> Coal mining incidents in the Appalachian region and what caused them accompanied by all abandoned coal mines in the region.  </p>
-      </div>
-    </div>
-    <div class=" m12 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Appalachia</div>
-        <img src="images/appalachia.png" alt="House" style="width:100%">
-      </div>
-      
-    </div>
-    <div class=" m12 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Urban Service Boundary</div>
-        <img src="images/service.png" alt="House" style="width:100%">
-      </div>
-      <div class="w3-display-container">
-        <div class="w3-display-center"></div>
-        <p> History of expansion of Lexingtons Urban Service Boundary, including the proposaed areas of expansion as of 2023.  </p>
-      </div>
-    </div>
-  </div>
+      This should be the same across all pages.
+     -->
+    <link rel="icon" href="./assets/images/profile.jpg" />
+		<title>Jaylin Basinger's Mapping Portfolio</title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <div class="w3-row-padding">
-    <div class=" m12 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Laurel Highlands</div>
-        <img src="images/confluence.png" alt="House" style="width:99%">
-      </div>
+		<link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+
+		<script defer src="./js/script.js"></script>
+	</head>
+	<body> 
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="./index.html">
+        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        <span class="nav-title">Maps By Jaylin</span>
+         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <a class="button" href="mailto:jaylinbasinger@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
     </div>
-    <div class="w3-row-padding">
-      <div class=" m12 w3-margin-bottom">
-        <div class="w3-display-container">
-          <div class="w3-display-topleft w3-black w3-padding">virgie</div>
-          <img src="images/virgieedit.png" alt="House" style="width:100%">
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PORTFOLIO HEADER -->
+      <div id="portfolio-header">
+        <div id="portfolio-header-image-container">
+          <!-- 
+            TODO
+
+            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
+            - Change the number to point to your Unemployable & replace the OpenSea link with your own
+            - If you aren't using an Unemployable as your image, remove the entire "a" element
+          -->
+          <img src="./assets/images/profile.jpg" class="portfolio-header-image">
+            <span class="image-caption">Uky Geography in the Bluegrass Day 2024 featuring Director of Geography Undergrad studies, Dr. Wood</span>
+          </a>
+        </div>
+
+          <!-- 
+            TODO
+
+            - Change the main-title to whatver you want
+            - Change the body-text after that to a quick introduction to what you do
+            - Edit the button text if you feel like it. It will link to the projects section below.
+          -->
+        <div id="portfolio-header-text-container">
+            <div class="header-text">
+              <span class="main-title">Hey, I'm Jaylin Basinger.</span>
+              <div class="body-text">                                                                                     I am a lover of maps and specifically the creating of detailed cartographic maps to spatially represent topics I am intrigued by. </div>
+            </div>
+            <a class="button" id="my-work-link">
+              <span class="button-text">Check out my projects</span> 
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
         </div>
       </div>
-    <div class=" m12 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Twilight</div>
-        <img src="images/twilight.png" alt="House" style="width:99%">
+
+      <!-- ABOUT SECTION -->
+      <!-- 
+        TODO
+
+        - Change the subheader-text to whatever header you want
+        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+      -->
+      <div id="about-section">
+        <span class="subheader-text">My Background / About Me</span>
+        <div class="about-section-content">
+          <div class="body-text">My name is Jaylin Basinger and I am a recent University of Kentucky Geography Graduate with a focus in cartography, GIS, and Urban Planning. I am in love with the art of map making and have published my favorite works below. I am proficient and frequently use softwares such as ArcGis Pro, Arc Online, and Arc Map and well as Qgis. I often use Arc softwares for GIS analyst duties while primarly using Qgis for my cartographic endeavors. With my creative map making process I use Adobe Photoshop, Illustrator, and Acrobat, as well as occasionally using the animation qualities of Blender to bring my DEM layers to life.                                                                                   </div>
+          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+        </div>
       </div>
-      <div class="w3-display-container">
-        <div class="w3-display-center"></div>
-        <p> Hand drawn story map of the first two twilight movies, created with Procreate and Adobe Illustrator.  </p>
+
+      <!-- PROJECTS / MY WORK SECTION -->
+      <div id="my-work-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text">My Work / My Projects</span>
+
+        <div class="projects-container">
+          <!-- 
+            TODO
+
+            This is where the project cards live. Here's a base level project card for you to copy:
+            <div class="project-card">
+              <img src="./assets/images/IMAGE_NAME" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">PROJECT_NAME</div>
+                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
+              </div>
+              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+
+            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
+                - IMAGE_NAME: the name of the image file in assets/images
+                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
+                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
+                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
+          -->
+          <div class="project-card">
+            <img src="./assets/images/appalachia-01.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Appalachian National Forests</div>
+              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/coal.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Abandoned Mines and Mining Accidents in Appalachia</div>
+              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/confluence.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Laurel Highlands Attractions</div>
+              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+                      </div>
+          <div class="project-card">
+            <img src="./assets/images/service.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Lexingtons Urban Service Boundary and the 2023 Proposed Expansion</div>
+              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+                     </div>
+          <div class="project-card">
+            <img src="./assets/images/twilight.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Twilight and New Moon Character Map</div>
+              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+                     </div>
+          <div class="project-card">
+            <img src="./assets/images/virgieedit.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Virgie Kentucky</div>
+              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+                     </div>
+          <div class="project-card">
+            <img src="./assets/images/pike.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Pike County Mountain Peak</div>
+              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+                     </div>
+          <div class="project-card">
+            <img src="./assets/images/rent.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">10 Year Median Rent Comparison</div>
+              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+                     </div>
+          <div class="project-card">
+            <img src="./assets/images/Raven.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Kentucky River Outlook at Ravens Run</div>
+              <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+            </div>
+            <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class=" m12 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Rent Change</div>
-        <img src="images/rent.png" alt="House" style="width:99%">
-      </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <!-- 
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+        <image src="./assets/icons/instagram.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://twitter.com/whitevans_eth">
+        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:whitevans.eth@gmail.com">
+        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      </a>
     </div>
-  </div>
-  <div class="w3-row-padding">
-    <div class=" m12 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Raven's Run Lidar</div>
-        <img src="images/Raven.png" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class=" m12 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Pikeville Terrain</div>
-        <img src="images/pike.png" alt="House" style="width:99%">
-      </div>
-    </div>
-    
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Nu Metal</div>
-        <iframe class="w3-image" src="map/webmap/index.html"
-        style ="width: 1200px;height: 891px"></iframe>
-       
-      </div>
-    </div>
-  </div>
 
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>Lets get in touch! </p>
-    <p>Email:Jaylinbasinger@gmail.com</p>
-
-  </div>
-
-<!-- Image  -->
-<div class="w3-container">
-  
-</div>
-
-<!-- End page content -->
-</div>
-
-
-<!-- Footer -->
-<footer class= "w3-margin-bottom w3-center w3-black">
-  <img src="images/footerCopy.png" class="w3-image" style="width:100%">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-
-</body>
+	</body>
 </html>
