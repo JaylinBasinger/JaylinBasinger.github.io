@@ -5,6 +5,7 @@
   width: 16px;
   height: 16px;
   margin-top: 1px;
+  color: rgb(13, 55, 102);
 }
 
 .footer-icon {
@@ -38,7 +39,7 @@ a.icon-link:hover {
 }
 
 .nav-title-link {
-  color: rgb(0, 0, 0);
+  color: rgb(20, 77, 131);
   text-decoration: none;
 }
 
@@ -59,9 +60,9 @@ a.icon-link:hover {
 
 a.button {
   padding: 8px 16px;
-  border: 3px solid #141414;
+  border: 3px solid #124e75;
   border-radius: 50px;
-  color: black;
+  color: rgb(36, 92, 138);
   text-decoration: none;
   width: fit-content;
   display: flex;

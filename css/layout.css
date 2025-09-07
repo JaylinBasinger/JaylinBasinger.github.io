@@ -13,7 +13,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:rgba(0, 45, 53, 0.493)
+  background-color:rgba(153, 181, 194, 0.74)
 }
 
 
@@ -43,11 +43,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  flex-basis: 50%;
+  flex-basis: 40%;
 }
 
 .portfolio-header-image {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
